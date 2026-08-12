@@ -1,5 +1,5 @@
 plugins {
-  id 'net.neoforged.moddev' version '2.0.75'
+id 'net.neoforged.moddev' version '2.0.75'
 }
 
 group = 'com.example.custommod'
