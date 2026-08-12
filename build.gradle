@@ -21,7 +21,7 @@ base {
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 neoForge {
-    version = '26.2.0-beta'
+    version = '21.0.167'
 
     runs {
         client {
