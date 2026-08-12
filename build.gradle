@@ -1,14 +1,43 @@
 plugins {
-id 'net.neoforged.moddev' version '2.0.75'
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.75'
 }
 
-group = 'com.example.custommod'
-version = '1.0.0'
+tasks.named('wrapper', Wrapper) {
+    distributionType = Wrapper.DistributionType.BIN
+}
 
-minecraft {
-    version = '26.2'
+version = '1.0.0'
+group = 'com.example.custommod'
+
+repositories {
+    mavenCentral()
+}
+
+base {
+    archivesName = 'custombossesmod'
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+neoForge {
+    version = '21.0.167'
+
+    runs {
+        client {
+            client()
+        }
+        server {
+            server()
+        }
+    }
+
+    mods {
+        custombossesmod {
+            sourceSet(sourceSets.main)
+        }
+    }
 }
 
 dependencies {
-    implementation 'net.neoforged:neoforge:26.2.0'
 }
