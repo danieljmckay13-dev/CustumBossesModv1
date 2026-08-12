@@ -1,0 +1,9 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="MIT"
+
+[[mods]]
+modId="custombossesmod"
+version="1.0.0"
+displayName="Custom Bosses Mod"
+description="20 Bosses, Weapons, Armor, and Commands."
