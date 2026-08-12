@@ -1,0 +1,14 @@
+plugins {
+    id 'net.neoforged.moddev' version '2.0.0-beta'
+}
+
+group = 'com.example.custommod'
+version = '1.0.0'
+
+minecraft {
+    version = '26.2'
+}
+
+dependencies {
+    implementation 'net.neoforged:neoforge:26.2.0'
+}
